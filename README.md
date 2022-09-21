@@ -60,4 +60,4 @@ This will generate the documentation for all source code files within [`src`](sr
 pdoc ./src
 ```
 
-will open a window in the browser running `pdoc` at a localhost server. In this case, the documentation pages will be automatically reloaded upon changes in the source code.
+This command will result in opening a window in the browser running `pdoc` at a localhost server. In this case, the documentation pages will be automatically reloaded upon changes in the source code.
