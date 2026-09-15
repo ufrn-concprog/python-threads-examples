@@ -9,8 +9,6 @@ This educational repository contains small, runnable examples of thread programm
 - [`_thread`](https://docs.python.org/3/library/_thread.html), Python's low-level thread API
 - [`threading`](https://docs.python.org/3/library/threading.html), the higher-level API recommended for most applications
 
-The examples demonstrate callback-based threads, custom `Thread` subclasses, and waiting for worker threads with `join()`.
-
 This project is part of the **Concurrent Programming** module at the [Federal University of Rio Grande do Norte (UFRN)](https://www.ufrn.br), Natal, Brazil.
 
 ## 📂 Repository Structure
@@ -60,7 +58,7 @@ python3 src/threading-class.py
 python3 src/threading-task.py
 ```
 
-The output order of messages from different threads is not guaranteed because it depends on the operating system scheduler. In `thread.py`, the low-level API does not provide a `join()` call in the example, so the final message is not a reliable indication of the order in which worker messages will appear. The other two examples call `join()` and wait for all workers before printing their final message.
+The output order of messages from different threads is not guaranteed because it depends on the operating system scheduler. In `thread.py`, the low-level API does not provide a `join()` call in the example, so the final message is not a reliable indicatior of the order in which worker messages will appear. The other two examples call `join()` and wait for all workers before printing their final message.
 
 For example, `threading-class.py` prints messages similar to:
 
